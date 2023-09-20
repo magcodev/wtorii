@@ -13,16 +13,16 @@ const DefaultFooter =() =>{
       />
       <Footer.LinkGroup className='my-2'>
         <Footer.Link href="#" className='mr-3'>
-          Home
+          Inicio
         </Footer.Link>
         <Footer.Link href="#" className='mr-3'>
-          Contact
+          Contacto
         </Footer.Link>
         <Footer.Link href="#" className='mr-3'>
-          Blogs
+          Inmuebles
         </Footer.Link>
         <Footer.Link href="#" className='mr-3'>
-          About
+          Equipo
         </Footer.Link>
       </Footer.LinkGroup>
     </Footer>

@@ -19,12 +19,12 @@
 
 import NavBar from "@/components/NavBar";
 import "./globals.css";
-import { Inter, Roboto } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import Script from "next/script";
 // import FlowBiteFooter from '@/components/Footer';
 import Footer from "@/components/Footer";
 
-const roboto = Roboto({
+const montserrat = Montserrat({
   weight: ["300", "400", "500", "700"],
   subsets: ["latin"],
 });
@@ -37,11 +37,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={roboto.className}>
-        <div className="container max-w-7xl mx-auto">
+      <body className={montserrat.className}>
+        <div className="">
           <NavBar />
         </div>
-        <div className="container max-w-7xl mx-auto px-2">{children}</div>
+        <div className="w-full mx-auto">
+          {children}
+          
+        </div>
         <Footer />
         <Script
           src="../path/to/flowbite/dist/flowbite.min.js"

@@ -3,7 +3,7 @@ import profilePic from "../assets/banner-img.png";
 
 const ContactPage = () => {
     return (
-        <div className=" bg-no-repeat bg-cover bg-[#8a2ce2] text-white md:h-72 rounded-md my-8 px-5">
+        <div className=" bg-no-repeat bg-cover bg-[#5254b3] text-white md:h-72 rounded-md my-8 px-5">
         <div className="md:flex justify-center h-full items-center">
           <div className="md:w-1/2 md:p-10 px-5 py-10 text-center">
             <h2 className="text-3xl font-bold">

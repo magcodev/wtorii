@@ -1,27 +1,23 @@
-'use client';
+"use client";
 
-import { Avatar, Dropdown, Navbar } from 'flowbite-react';
-import Image from 'next/image';
+import { Avatar, Dropdown, Navbar } from "flowbite-react";
+import Image from "next/image";
 
 export default function NavbarWithDropdown() {
+  
   return (
-    <Navbar
-      fluid
-      rounded
-    >
+    <Navbar fluid rounded style={{backgroundColor:"#e5e7e9"}}>
       <Navbar.Brand href="/">
         <Image
-        width={32}
-        height={32}
+          width={130}
+          height={100}
+          style={{ paddingLeft: "1.5rem" }}
           alt="Flowbite React Logo"
           // className="mr-3 h-6 sm:h-9"
-          src="/logo.png"
+          src="/images/logo.png"
         />
-        <span className="self-center whitespace-nowrap ml-2 text-xl font-semibold dark:text-white">
-          TORII
-        </span>
       </Navbar.Brand>
-      <div className="flex md:order-2">
+      <div className="">
         {/* <Dropdown
           inline
           label={<Avatar alt="User settings" img="https://flowbite.com/docs/images/people/profile-picture-5.jpg" rounded/>}
@@ -51,26 +47,19 @@ export default function NavbarWithDropdown() {
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        <Navbar.Link
-          active
-          href="/"
-        >
-          <p>
-            Inicio
-          </p>
+        <Navbar.Link active href="/" className="float-right" style={{fontSize:25}}>
+          <p>Inicio</p>
         </Navbar.Link>
-        <Navbar.Link href="blogs">
+        <Navbar.Link href="blogs" className="float-right" style={{fontSize:25}}>
           Inmuebles
         </Navbar.Link>
-        <Navbar.Link href="about">
+        <Navbar.Link href="about" className="float-right" style={{fontSize:25}}>
           Equipo
         </Navbar.Link>
-        <Navbar.Link href="contact">
+        <Navbar.Link href="contact" className="float-right" style={{fontSize:25}}>
           Contacto
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
-  )
+  );
 }
-
-
