@@ -2,13 +2,14 @@
 "blogs": [
           {
             "id": 1,
-            "title": "Breaking News: Earthquake Hits City",
+            "title": "Breaking New: Earthquake Hits City",
             "categoryId": 1,
             "category": "Natural Disasters",
             "date": "2023-07-15",
-            "description": "A powerful earthquake measuring 7.2 on the Richter scale struck the city today, causing significant damage to buildings and infrastructure. Rescue and relief operations are underway.",
+            "description": "A test powerful earthquake measuring 7.2 on the Richter scale struck the city today, causing significant damage to buildings and infrastructure. Rescue and relief operations are underway.",
             "source": "Example News Network",
-            "image": "https://images.unsplash.com/photo-1638890816065-9019f9f49238?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+            "image": "https://images.unsplash.com/photo-1638890816065-9019f9f49238?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+            "type": "Venta"
           },
           {
             "id": 2,

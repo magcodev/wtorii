@@ -2,7 +2,8 @@ import AboutPage from "@/components/AboutPage";
 import Banner from "@/components/Banner";
 import BlogPage from "@/components/BlogPage";
 import ContactPage from "@/components/ContactPage";
-import CollageCard from "@/components/CollageCard";
+import PrediosVenta from "@/components/PrediosVenta";
+import PrediosRenta from "@/components/PrediosRenta";
 
 export default function Home() {
   return (
@@ -11,11 +12,12 @@ export default function Home() {
         <Banner />
       </div>
       <div className="flex min-h-screen flex-col items-center justify-between p-24 mx-auto">
-        <CollageCard />
-        <BlogPage />
+        <PrediosVenta />
+        <PrediosRenta />        
         <AboutPage />
         <ContactPage />
       </div>
     </main>
   );
 }
+

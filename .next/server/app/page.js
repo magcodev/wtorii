@@ -108,7 +108,7 @@ module.exports = require("next/dist/shared/lib/head-manager-context");
 
 /***/ }),
 
-/***/ 7350:
+/***/ 9569:
 /***/ ((module) => {
 
 "use strict";
@@ -286,7 +286,7 @@ const tree = {
         '',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9569)), "C:\\wtorii\\src\\app\\page.js"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 549)), "C:\\wtorii\\src\\app\\page.js"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3881))).default(props))],
     apple: [],
@@ -341,17 +341,29 @@ const routeModule = new AppPageRouteModule({
 
 /***/ }),
 
-/***/ 5601:
+/***/ 961:
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 1232, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 2987, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 831, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6926, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4282, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6505, 23))
+
+/***/ }),
+
+/***/ 8853:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 3380, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1903));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 593));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6732))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 6732));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 593))
 
 /***/ }),
 
-/***/ 9569:
+/***/ 549:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -402,30 +414,72 @@ const Banner = ()=>{
 };
 /* harmony default export */ const components_Banner = (Banner);
 
-// EXTERNAL MODULE: ./src/components/BlogPage.jsx + 2 modules
-var BlogPage = __webpack_require__(2835);
+// EXTERNAL MODULE: ./src/components/BlogPage.jsx
+var BlogPage = __webpack_require__(3579);
 // EXTERNAL MODULE: ./src/components/ContactPage.jsx
 var ContactPage = __webpack_require__(3408);
-;// CONCATENATED MODULE: ./src/components/CollageCard.jsx
+// EXTERNAL MODULE: ./src/utilities/loadAllBlogs.js
+var loadAllBlogs = __webpack_require__(3217);
+// EXTERNAL MODULE: ./src/components/BlogCard.jsx
+var BlogCard = __webpack_require__(9970);
+;// CONCATENATED MODULE: ./src/components/PrediosVenta.jsx
 
-const CollageCard = async ()=>{
+
+
+const PrediosVenta = async ()=>{
+    const blogs = await (0,loadAllBlogs/* default */.Z)();
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-        className: "my-24 px-5",
+        className: "px-5",
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                className: "text-center text-5xl font-bold mb-10",
-                children: "tres Popular Blogs"
+            /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                className: "text-center text-5xl mb-10 uppercase",
+                children: "Nuevos predios"
             }),
-            /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                className: "text-center md:w-2/3 mx-auto",
-                children: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, modi! Architecto cum excepturi non obcaecati qui laboriosam facilis a quisquam harum nulla reprehenderit ratione praesentium laborum corporis, unde ex vero!"
+            /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                className: "text-center text-5xl mb-10 font-bold",
+                children: "En venta"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: "grid md:grid-cols-3 gap-5 mt-20",
+                children: blogs.slice(0, 3).map((blog)=>/*#__PURE__*/ jsx_runtime_.jsx(BlogCard/* default */.ZP, {
+                        blog: blog
+                    }, blog.id))
             })
         ]
     });
 };
-/* harmony default export */ const components_CollageCard = (CollageCard);
+/* harmony default export */ const components_PrediosVenta = (PrediosVenta);
+
+;// CONCATENATED MODULE: ./src/components/PrediosRenta.jsx
+
+
+
+const PrediosRenta = async ()=>{
+    const blogs = await (0,loadAllBlogs/* default */.Z)();
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+        className: "px-5 my-20 ",
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx("h3", {
+                className: "text-center text-5xl mb-10 uppercase",
+                children: "Nuevos predios"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("h4", {
+                className: "text-center text-5xl mb-10 font-bold",
+                children: "En renta"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                className: "grid md:grid-cols-3 gap-5 mt-20",
+                children: blogs.slice(3, 6).map((blog)=>/*#__PURE__*/ jsx_runtime_.jsx(BlogCard/* default */.ZP, {
+                        blog: blog
+                    }, blog.id))
+            })
+        ]
+    });
+};
+/* harmony default export */ const components_PrediosRenta = (PrediosRenta);
 
 ;// CONCATENATED MODULE: ./src/app/page.js
+
 
 
 
@@ -445,8 +499,8 @@ function Home() {
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                 className: "flex min-h-screen flex-col items-center justify-between p-24 mx-auto",
                 children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx(components_CollageCard, {}),
-                    /*#__PURE__*/ jsx_runtime_.jsx(BlogPage/* default */.Z, {}),
+                    /*#__PURE__*/ jsx_runtime_.jsx(components_PrediosVenta, {}),
+                    /*#__PURE__*/ jsx_runtime_.jsx(components_PrediosRenta, {}),
                     /*#__PURE__*/ jsx_runtime_.jsx(AboutPage/* default */.Z, {}),
                     /*#__PURE__*/ jsx_runtime_.jsx(ContactPage/* default */.Z, {})
                 ]
@@ -465,7 +519,7 @@ function Home() {
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [587,19,178,954,973,784,217,790], () => (__webpack_exec__(2836)));
+var __webpack_exports__ = __webpack_require__.X(0, [587,19,178,954,825,665,68,217,790], () => (__webpack_exec__(2836)));
 module.exports = __webpack_exports__;
 
 })();
