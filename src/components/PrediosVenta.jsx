@@ -12,6 +12,7 @@ const PrediosVenta = async () => {
           <BlogCard key={blog.id} blog={blog} />
         ))}
       </div>
+      <hr className="ml-6 mr-6 mt-6" height="1" />
     </div>
   );
 };
