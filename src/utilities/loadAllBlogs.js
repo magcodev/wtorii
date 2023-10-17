@@ -19,7 +19,7 @@ const loadAllBlogs = async() => {
                     "floors":1,
                     "metters":90,
                     "garage":1,
-                    "category": "Natural Disasters",
+                    "category": "Natural Disasters Ok",
                     "date": "2023-07-15",
                     "description": "A powerful earthquake measuring 7.2 on the Richter scale struck the city today, causing significant damage to buildings and infrastructure. Rescue and relief operations are underway.",
                     "source": "Example News Network",
