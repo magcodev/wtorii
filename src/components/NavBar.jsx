@@ -11,8 +11,7 @@ export default function NavbarWithDropdown() {
           width={130}
           height={100}
           style={{ paddingLeft: "1.5rem" }}
-          alt="Flowbite React Logo"
-          // className="mr-3 h-6 sm:h-9"
+          alt="Flowbite React Logo"          
           src="/images/logo.png"
         />
       </Navbar.Brand>
