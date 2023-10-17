@@ -297,7 +297,7 @@ const tree = {
         }]
       },
         {
-        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5619)), "C:\\wtorii\\src\\app\\layout.js"],
+        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 48730)), "C:\\wtorii\\src\\app\\layout.js"],
 'not-found': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 95493, 23)), "next/dist/client/components/not-found-error"],
         metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
@@ -341,14 +341,14 @@ const routeModule = new AppPageRouteModule({
 
 /***/ }),
 
-/***/ 82133:
+/***/ 73456:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 13483));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 73380, 23));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 80593));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 56732));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 42608));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 13483))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 42608))
 
 /***/ }),
 
@@ -523,7 +523,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [587,60,249,178,825,57,68,842,241], () => (__webpack_exec__(82836)));
+var __webpack_exports__ = __webpack_require__.X(0, [587,60,249,178,825,514,68,842,241], () => (__webpack_exec__(82836)));
 module.exports = __webpack_exports__;
 
 })();

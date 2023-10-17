@@ -1,9 +1,10 @@
-import NavbarWithDropdown from "@/components/Navbar";
+
 
 import "./globals.css";
 import { Inter, Montserrat } from "next/font/google";
 import Script from "next/script";
 import Footer from "@/components/Footer";
+import NavbarWithDropdown from "@/components/NavBar";
 
 const montserrat = Montserrat({
   weight: ["300", "400", "500", "700"],

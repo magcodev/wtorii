@@ -3,7 +3,7 @@
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
 import Image from "next/image";
 
-export default function NavbarWithDropdown() {
+const NavbarWithDropdown = () => {
   return (
     <Navbar fluid rounded style={{ backgroundColor: "#e5e7e9" }}>
       <Navbar.Brand href="/">
@@ -11,7 +11,7 @@ export default function NavbarWithDropdown() {
           width={130}
           height={100}
           style={{ paddingLeft: "1.5rem" }}
-          alt="Flowbite React Logo"          
+          alt="Flowbite React Logo"
           src="/images/logo.png"
         />
       </Navbar.Brand>
@@ -51,4 +51,6 @@ export default function NavbarWithDropdown() {
       </Navbar.Collapse>
     </Navbar>
   );
-}
+};
+
+export default NavbarWithDropdown;

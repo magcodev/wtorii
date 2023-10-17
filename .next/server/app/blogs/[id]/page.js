@@ -315,7 +315,7 @@ const tree = {
       ]
       },
         {
-        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 5619)), "C:\\wtorii\\src\\app\\layout.js"],
+        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 48730)), "C:\\wtorii\\src\\app\\layout.js"],
 'not-found': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 95493, 23)), "next/dist/client/components/not-found-error"],
         metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
@@ -497,7 +497,7 @@ const SingleBlog = async ({ params })=>{
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [587,60,249,178,57], () => (__webpack_exec__(33335)));
+var __webpack_exports__ = __webpack_require__.X(0, [587,60,249,178,514], () => (__webpack_exec__(33335)));
 module.exports = __webpack_exports__;
 
 })();
