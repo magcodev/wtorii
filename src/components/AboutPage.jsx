@@ -74,8 +74,8 @@ const AboutPage = () => {
                 </p>
               ) : (
                 <form className="flex flex-col" onSubmit={handleSubmit}>
-                  <div class="flex flex-wrap -mx-4">
-                    <div class="w-1/2 px-4 mb-4">
+                  <div className="flex flex-wrap -mx-4">
+                    <div className="w-1/2 px-4 mb-4">
                       <input
                         name="name"
                         type="name"
@@ -144,7 +144,7 @@ const AboutPage = () => {
                         </div>
                       </label>
                     </div>
-                    <div class="w-1/2 px-4 mb-4">
+                    <div className="w-1/2 px-4 mb-4">
                       <textarea
                         name="message"
                         id="message"

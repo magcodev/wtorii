@@ -1,9 +1,9 @@
 {
-  "/page": "/",
   "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
   "/about/page": "/about",
   "/blogs/page": "/blogs",
   "/contact/page": "/contact",
-  "/api/send/route": "/api/send",
-  "/blogs/[id]/page": "/blogs/[id]"
+  "/blogs/[id]/page": "/blogs/[id]",
+  "/api/send/route": "/api/send"
 }

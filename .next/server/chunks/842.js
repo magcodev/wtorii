@@ -105,10 +105,10 @@ const AboutPage = ()=>{
                                     onSubmit: handleSubmit,
                                     children: [
                                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                            class: "flex flex-wrap -mx-4",
+                                            className: "flex flex-wrap -mx-4",
                                             children: [
                                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                                                    class: "w-1/2 px-4 mb-4",
+                                                    className: "w-1/2 px-4 mb-4",
                                                     children: [
                                                         /*#__PURE__*/ jsx_runtime_.jsx("input", {
                                                             name: "name",
@@ -185,7 +185,7 @@ const AboutPage = ()=>{
                                                     ]
                                                 }),
                                                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                    class: "w-1/2 px-4 mb-4",
+                                                    className: "w-1/2 px-4 mb-4",
                                                     children: /*#__PURE__*/ jsx_runtime_.jsx("textarea", {
                                                         name: "message",
                                                         id: "message",

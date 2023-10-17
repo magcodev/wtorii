@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar";
+import NavbarWithDropdown from "@/components/Navbar";
 
 import "./globals.css";
 import { Inter, Montserrat } from "next/font/google";
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body className={montserrat.className}>
         <div className="">
-          <Navbar />
+          <NavbarWithDropdown />
         </div>
         <div className="w-full mx-auto">{children}</div>
         <Footer />
