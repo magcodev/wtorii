@@ -1,10 +1,47 @@
+"use client";
+import React, { useState } from "react";
+import GithubIcon from "@/assets/contact-us.webp";
+import LinkedinIcon from "@/assets/contact-us.webp";
+import Link from "next/link";
 import Image from "next/image";
-import React from "react";
 import AboutImg from "@/assets/about.avif";
 
 const AboutPage = () => {
+  const [emailSubmitted, setEmailSubmitted] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = {
+      email: e.target.email.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value,
+    };
+    const JSONdata = JSON.stringify(data);
+    const endpoint = "/api/send";
+
+    // Form the request for sending data to the server.
+    const options = {
+      // The method is POST because we are sending data.
+      method: "POST",
+      // Tell the server we're sending JSON.
+      headers: {
+        "Content-Type": "application/json",
+      },
+      // Body of the request is the JSON data we created above.
+      body: JSONdata,
+    };
+
+    const response = await fetch(endpoint, options);
+    const resData = await response.json();
+
+    if (response.status === 200) {
+      console.log("Message sent.");
+      setEmailSubmitted(true);
+    }
+  };
+
   return (
-    <div className="px-5">
+    <div className="px-5" style={{width:'70rem'}}>
       <div className="relative pt-10">
         <div className="flex justify-center">
           <span
@@ -13,7 +50,7 @@ const AboutPage = () => {
               top: -5,
               backgroundColor: "#001F3F",
               opacity: 0.9,
-              letterSpacing:'1rem'
+              letterSpacing: "1rem",
             }}
           >
             Contáctanos
@@ -25,46 +62,106 @@ const AboutPage = () => {
             opacity: 0.9,
           }}
         >
-          <h2 className="text-center text-5xl font-bold mb-10">About Us</h2>
-          <p className="text-center md:w-2/3 mx-auto">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt,
-            modi! Architecto cum excepturi non obcaecati qui laboriosam facilis
-            a quisquam harum nulla reprehenderit ratione praesentium laborum
-            corporis, unde ex vero!
+          <p className="text-center md:w-2/3 mx-auto pt-14">
+            !La casa de tus sueños a un paso
           </p>
           {/* About container */}
-          <div className="grid md:grid-cols-2 my-16 md:w-4/5 mx-auto gap-8">
-            <div className="relative md:order-2">
-              <Image
-                src={AboutImg}
-                width={500}
-                height={500}
-                alt=""
-                className="rounded hover:scale-110 transition-all duration-300"
-              />
-              <div className="bg-indigo-500 w-full h-[316px] -z-10 absolute top-2 mt-4 left-2 ml-5 rounded border-2 border-white hidden md:block"></div>
-              <div className=" w-full h-[316px] -z-10 absolute top-6 mt-4 left-6 ml-5 rounded border-2 border-yellow-300 hidden md:block"></div>
-            </div>
-            <div className="">
-              <h2 className="text-3xl font-bold">We are care about...</h2>
-              <p className="my-5 md:w-11/12">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Assumenda voluptatibus, deleniti porro doloribus, excepturi ea
-                alias similique fugit delectus ab eligendi veritatis corrupti
-                dolore quidem expedita, magni facilis optio distinctio sint sit
-                sapiente dolor repellendus.
-                <br /> <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem soluta aspernatur molestias id veniam porro, qui
-                tempora, eveniet exercitationem asperiores maiores architecto
-                dolores sed commodi reiciendis tempore accusantium ea! Iste!
-              </p>
-              <button className="btn hover:bg-indigo-700 hover:text-white">
-                Contact me
-              </button>
-              <a className="ml-3 text-indigo-700 hover:border-2 rounded text-center hover:border-indigo-600 px-3 py-2 transition-all duration-300 cursor-pointer">
-                Contact me
-              </a>
+          <div className="grid md:grid-cols-1 my-16 md:w-4/5 mx-auto gap-8">
+            <div>
+              {emailSubmitted ? (
+                <p className="text-green-500 text-sm mt-2">
+                  Email sent successfully!
+                </p>
+              ) : (
+                <form className="flex flex-col" onSubmit={handleSubmit}>
+                  <div class="flex flex-wrap -mx-4">
+                    <div class="w-1/2 px-4 mb-4">
+                      <input
+                        name="name"
+                        type="name"
+                        id="name"
+                        required
+                        className="bg-[#ffffff] border border-[#b0ecca] placeholder-[#b0ecca] text-sm rounded-lg block w-full p-2.5 m-4"
+                        placeholder="Marlon Brando"
+                      />
+
+                      <input
+                        name="email"
+                        type="email"
+                        id="email"
+                        required
+                        className="bg-[#ffffff] border border-[#b0ecca] placeholder-[#b0ecca] text-sm rounded-lg block w-full p-2.5 m-4"
+                        placeholder="jacob@google.com"
+                      />
+
+                      <input
+                        name="telefono"
+                        type="telefono"
+                        id="telefono"
+                        required
+                        className="bg-[#ffffff] border border-[#b0ecca] placeholder-[#b0ecca] text-sm rounded-lg block w-full p-2.5 m-4"
+                        placeholder="0997654321"
+                      />
+
+                      <label
+                        htmlFor="email"
+                        className="text-black block m-4 text-sm font-medium"
+                      >
+                        Me interesa:
+                        <div className="radiogroup">
+                          <input
+                            type="radio"
+                            id="comprar"
+                            className="radio border-[#b0ecca] mr-1"
+                            name="opcion"
+                            value="comprar"
+                          />
+                          <label htmlFor="comprar" className="radio-label">
+                            comprar
+                          </label>
+
+                          <input
+                            type="radio"
+                            id="rentar"
+                            className="radio border-[#b0ecca] ml-5 mr-1"
+                            name="opcion"
+                            value="rentar"
+                          />
+                          <label htmlFor="rentar" className="radio-label">
+                            rentar
+                          </label>
+
+                          <input
+                            type="radio"
+                            id="vender"
+                            className="radio border-[#b0ecca] ml-5 mr-1"
+                            name="opcion"
+                            value="vender"
+                          />
+                          <label htmlFor="vender" className="radio-label">
+                            vender
+                          </label>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="w-1/2 px-4 mb-4">
+                      <textarea
+                        name="message"
+                        id="message"
+                        className="bg-[#ffffff] border border-[#b0ecca] placeholder-[#b0ecca] text-sm rounded-lg block w-full p-2.5 m-4"
+                        placeholder="Let's talk about..."
+                      />
+                    </div>
+                  </div>
+
+                  <button
+                    type="submit"
+                    className="bg-[#d84535] bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 m-4 rounded-lg w-full"
+                  >
+                    Enviar
+                  </button>
+                </form>
+              )}
             </div>
           </div>
         </div>

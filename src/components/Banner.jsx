@@ -14,7 +14,7 @@ const Banner = () => {
             semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra
             sagittis sit aliquet at. Magna nam platea justo.
           </p>
-          <button className="btn">Read More</button>
+          {/* <button className="btn">Read More</button> */}
         </div>
       </div>
     </div>
