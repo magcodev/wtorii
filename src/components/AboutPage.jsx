@@ -62,7 +62,7 @@ const AboutPage = () => {
             opacity: 0.9,
           }}
         >
-          <p className="text-center md:w-2/3 mx-auto pt-14">
+          <p className="text-center md:w-2/3 mx-auto pt-14" style={{fontSize:'2rem'}}>
             !La casa de tus sueños a un paso
           </p>
           {/* About container */}
@@ -82,7 +82,7 @@ const AboutPage = () => {
                         id="name"
                         required
                         className="bg-[#ffffff] border border-[#b0ecca] placeholder-[#b0ecca] text-sm rounded-lg block w-full p-2.5 m-4"
-                        placeholder="Marlon Brando"
+                        placeholder="nombre y apellido"
                       />
 
                       <input
@@ -91,7 +91,7 @@ const AboutPage = () => {
                         id="email"
                         required
                         className="bg-[#ffffff] border border-[#b0ecca] placeholder-[#b0ecca] text-sm rounded-lg block w-full p-2.5 m-4"
-                        placeholder="jacob@google.com"
+                        placeholder="correo electrónico"
                       />
 
                       <input
@@ -100,7 +100,7 @@ const AboutPage = () => {
                         id="telefono"
                         required
                         className="bg-[#ffffff] border border-[#b0ecca] placeholder-[#b0ecca] text-sm rounded-lg block w-full p-2.5 m-4"
-                        placeholder="0997654321"
+                        placeholder="número de teléfono"
                       />
 
                       <label
@@ -148,8 +148,8 @@ const AboutPage = () => {
                       <textarea
                         name="message"
                         id="message"
-                        className="bg-[#ffffff] border border-[#b0ecca] placeholder-[#b0ecca] text-sm rounded-lg block w-full p-2.5 m-4"
-                        placeholder="Let's talk about..."
+                        className="bg-[#ffffff] border border-[#b0ecca] placeholder-[#b0ecca] text-sm rounded-lg block w-full p-2.5 m-4 h-full"
+                        placeholder="mensaje"
                       />
                     </div>
                   </div>

@@ -4,6 +4,7 @@ import BlogPage from "@/components/BlogPage";
 import EmailSection from "@/components/ContactPage";
 import PrediosVenta from "@/components/PrediosVenta";
 import PrediosRenta from "@/components/PrediosRenta";
+import SocialNets from "@/components/SocialNets";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <PrediosVenta />
         <PrediosRenta />
         <AboutPage />
+        <SocialNets />
         {/* <EmailSection /> */}
       </div>
     </main>
