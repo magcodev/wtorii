@@ -14,24 +14,135 @@
   opacity: 0.5;
   clip-path: polygon(52% 0, 100% 0%, 100% 100%, 43% 100%);
   height: 78rem;
-  
-}
-
-.btn {
-  @apply bg-black text-white px-3 py-2 rounded hover:bg-white hover:text-blue-700 transition-all duration-500;
 }
 
 body {
   font-family: var(--font-principal);
 }
 
-.bg-image {  
+.bg-image {
   height: 100%;
   object-fit: cover;
 }
 
-/* @media screen and (max-width: 576px) {
-  .banner {
-    clip-path: none;
-  }
-} */
+.footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container .footer-top {
+  background-color: green;
+  width: 100%;
+  /* height: 3rem; */
+  /* display: flex; */
+}
+
+.footer-container .footer-bottom {
+  width: 100%;
+  display: flex;
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-bottom .left {
+  text-align: left;
+}
+
+.footer-bottom .right {
+  text-align: right;
+}
+
+.footer-top .left {
+  text-align: left;
+}
+
+.footer-top .right {
+  text-align: right;
+}
+
+.footer-top .left img {
+  align-self: center;
+}
+
+.footer-top {
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+
+.footer-top .left {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-top .right {
+  width: 60%;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.footer-top .right .ul .li {
+  display: flex;
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.footer-top .right .ul  {
+  height: 13rem;
+  display: grid;
+  margin-top: 1rem;
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+/* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+
+.footer-top .right .footer-link-group {
+  /* height: 100%; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.footer-top .right .footer-link-group a {
+  /* margin-bottom: 1rem; */
+}
+
+.footer-link-group {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.footer-link-group a {
+  /* margin-bottom: 1rem;
+  align-self: center; */
+}

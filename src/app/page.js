@@ -12,7 +12,7 @@ export default function Home() {
       <div className="mx-0">
         <Banner />
       </div>
-      <div className="flex min-h-screen flex-col items-center justify-between p-24 mx-auto">
+      <div className="flex min-h-screen flex-col items-center justify-between p-24 mx-auto" style={{paddingBottom:"3rem"}}>
         <PrediosVenta />
         <PrediosRenta />
         <AboutPage />
